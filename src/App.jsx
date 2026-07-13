@@ -1,25 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-import Header from './assets/Header';
-import Form from './assets/Form';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
-  const [formdata, setFormData] = useState({
-  
-  })
+import "./App.css";
 
+import Header from "./assets/Header";
+import Form from "./assets/Form";
+import DBEntries from "./assets/DBEntries";
+
+function Home() {
   return (
-    <>
-      <div className="container">
-        <Header></Header>
-        <Form></Form>
-         {/* <HousePriceForm></HousePriceForm>  */}
-       </div>
-       </>
-  )
+    <div className="container">
+      <Header />
+      <Form />
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <BrowserRouter>
+
+      <Routes>
+
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/db-entries"
+          element={<DBEntries />}
+        />
+
+      </Routes>
+
+    </BrowserRouter>
+  );
+}
+
+export default App;
