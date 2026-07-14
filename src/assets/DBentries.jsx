@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function DBEntries() {
+function DBentries() {
 
   const [entries, setEntries] = useState([]);
   const [editingId, setEditingId] = useState(null);
