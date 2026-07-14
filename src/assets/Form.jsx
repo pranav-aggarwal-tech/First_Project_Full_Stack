@@ -33,7 +33,7 @@ console.log("Event is ::::::::",event.target.name);
 
     try {
 
-      const res = await fetch( "http://localhost:5000/api/predict",
+      const res = await fetch( "https://first-project-full-stack-api.onrender.com/api/predict",
         {
           method: "POST",
 

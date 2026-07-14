@@ -11,7 +11,7 @@ function DBEntries() {
   }, []);
 
   const loadEntries = () => {
-    fetch("http://localhost:5000/api/entries")
+    fetch("https://first-project-full-stack-api.onrender.com/api/entries")
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
