@@ -4,7 +4,7 @@ import "./App.css";
 
 import Header from "./assets/Header";
 import Form from "./assets/Form";
-import DBentries from "./assets/DBentries";
+import DBEntries from "./assets/DBentries";
 
 function Home() {
   return (
